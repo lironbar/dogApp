@@ -1,0 +1,69 @@
+<div class="wrapper">
+  <form ng-submit="searchBox(searchText, result)">
+    <div class="row radio-bar">
+      <div class="radio-row">
+      <div class="col-xs-4">
+        <div class="radio">
+          <label>
+            <input ng-model="result" type="radio" name="rdoResult" ng-value="'web'" checked="checked">
+            <span>
+              Web
+            </span>
+          </label>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="radio">
+          <label>
+            <input ng-model="result" type="radio" name="rdoResult" ng-value="'image'">
+            <span>
+              Images
+            </span>
+          </label>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="radio">
+          <label>
+            <input ng-model="result" type="radio" name="rdoResult" ng-value="'video'">
+            <span>
+              Videos
+            </span>
+          </label>
+        </div>
+      </div>
+      </div>
+    </div>
+
+<div class="row">
+  <div class="col-md-12">
+    <button id="search-icon" type="submit"><span type="submit" class="glyphicon glyphicon-search"></span></button>
+    <input ng-model="searchText" type="search" id="search" placeholder="Search for..." />
+  </div>
+</div>
+
+    <div id="bottom-bar">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="weather-widget">
+            <ul>
+              <li>
+                {{weather.temp}}{{weather.units.temp}}
+              </li>
+              <li>
+                {{weather.city}}
+              </li>
+              <li>
+                {{weather.country}}
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 text-right">
+          <button id="btn" type="button" ng-click="nextImage()">Next Image</button>
+        </div>
+      </div>
+    </div>
+
+  </form>
+</div>

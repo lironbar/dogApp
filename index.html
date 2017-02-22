@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dog Lovers Chrome Extension</title>
+  <link rel="stylesheet" href="app/styles/app.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/simpleweather/jquery.simpleweather.min.js"></script>
+
+
+  <script src="app/app.js"></script>
+  <script src="app/app.config.js"></script>
+
+  <script src="app/services/images.service.js"></script>
+  <script src="app/services/general.service.js"></script>
+  <script src="app/services/location.factory.js"></script>
+
+  <script src="app/layout/dog-page/dog-page.js"></script>
+
+</head>
+<body ng-app="app">
+
+  <div ng-view></div>
+
+</body>
+</html>

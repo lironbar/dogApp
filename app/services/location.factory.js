@@ -14,7 +14,6 @@ function geoLocationFactory(){
       alert(errMsg);
     } else {
       navigator.geolocation.getCurrentPosition(function(position){
-        console.log(position);
         cb(position);
       }, function(err){
         alert(ERROR_MSG + ': ' + (err && err.message) ? err.message : '');
